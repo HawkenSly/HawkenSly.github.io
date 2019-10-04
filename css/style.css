@@ -1,0 +1,29 @@
+body {
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+
+#landing {
+    background-image: url("../img/backgroundimage.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.transparency {
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.ontop {
+    position:relative;
+}
+
+.verticalcenter {
+    padding-top: 25vh;
+    padding-bottom: 0;
+}
+
+.smol {
+
+}
