@@ -1,14 +1,20 @@
 body {
-    background: rgba(0, 0, 0, 0.6) !important;
+    background: #b7b7b7 !important;
 }
 
+i.darkblue.icon {
+    color: #1e4ca1 !important;
+}
 
-#landing {
-    background-image: url("../img/backgroundimage.png");
+#foresthero {
+    background-image: url("../img/foresthero.png");
+}
+
+.landing {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 80%;
 }
 
 .transparency {
@@ -20,10 +26,11 @@ body {
 }
 
 .verticalcenter {
-    padding-top: 25vh;
-    padding-bottom: 0;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
 }
 
-.smol {
-
+.vertpadding {
+    padding: 4em 0 !important;
 }
+
