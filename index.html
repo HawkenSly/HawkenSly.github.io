@@ -13,24 +13,39 @@
 
 <body>
     <header class="landing" id="foresthero">
-        <div class="ui inverted menu fixed transparency ">
-            <div class="ui container">
-                <a class="active item">
-                    Home
-                </a>
-                <a href="projects.html" class="item">
-                    Projects
-                </a>
-                <a href="skills.html" class="item">
-                    Skills
-                </a>
-                <div href="contact.html" class="right menu">
-                    <a class="item">
-                        Contact
-                    </a>
-                </div>
-            </div>
-        </div>
+            <div class="ui tablet computer only padded grid">
+                    <div class="ui borderless fluid transparency inverted menu">
+                      <div class="ui container">
+                        <a class="header item" href="#">HawkenSly</a>
+                        <a class="item" href="/index.html">Home</a>
+                        <a class="item" href="/projects.html">Projects</a>
+                        <a class="item" href="/skills.html">Skills</a>
+                        <div class="right menu">
+                            <a class="item" href="/contact.html">Contact</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui mobile only padded grid">
+                    <div class="ui borderless fluid transparency inverted menu">
+                      <a class="header item" href="#root">HawkenSly</a>
+                      <div class="right menu">
+                        <div class="item">
+                          <button class="ui icon toggle basic inverted button">
+                            <i class="content icon"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="ui vertical borderless fluid inverted menu">
+                        <a class="item" href="#">Home</a>
+                        <a class="item" href="/projects.html">Projects</a>
+                        <a class="item" href="/skills.html">Skills</a>
+                        <a class="item" href="/contact.html">Contact</a>
+                      </div>
+                    </div>
+                  </div>
+
+
         <div class="ui vertical masthead center aligned segment">
             <div class="ui text container verticalcenter fadeaway">
                 <img src="./img/logo.png" alt="" class="ui small image centered">
@@ -97,6 +112,10 @@
     $(window).scroll(function () {
         $(".fadeaway").css("opacity", 1 - $(window).scrollTop() / 250);
     });
+    $(document).ready(function() {
+            $(".ui.toggle.button").click(function() {
+              $(".mobile.only.grid .ui.vertical.menu").toggle(100);
+            });
+          });
 </script>
-
 </html>

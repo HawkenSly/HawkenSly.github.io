@@ -36,6 +36,7 @@ i.darkblue.icon {
     background: rgba(0, 0, 0, 0.6) !important;
 }
 
+
 .ontop {
     position:relative;
 }
@@ -56,3 +57,18 @@ i.darkblue.icon {
     float: left;
 }
 
+.ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+    display: none;
+  }
+
+  .ui.huge.header {
+    font-size: 36px;
+  }
+
+  .ui.inverted.menu {
+    border-radius: 0;
+    flex-wrap: wrap;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
