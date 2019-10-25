@@ -72,3 +72,16 @@ i.darkblue.icon {
     padding-left: 0;
     padding-right: 0;
   }
+
+.smallcolumn {
+    max-width: 450px !important;
+}
+
+.bgnone {
+    background: none !important;
+}
+
+.footerpad {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

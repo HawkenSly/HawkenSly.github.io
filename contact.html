@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HawkenSly</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/semantic.min.css">
+
+</head>
+
+<body>
+    <div class="ui tablet computer only padded grid">
+        <div class="ui borderless fluid transparency inverted menu">
+            <div class="ui container">
+                <a class="header item" href="#">HawkenSly</a>
+                <a class="item" href="/index.html">Home</a>
+                <a class="item" href="/projects.html">Projects</a>
+                <a class="item" href="/skills.html">Skills</a>
+                <div class="right menu">
+                    <a class="item" href="/contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui mobile only padded grid">
+        <div class="ui borderless fluid transparency inverted menu">
+            <a class="header item" href="#root">HawkenSly</a>
+            <div class="right menu">
+                <div class="item">
+                    <button class="ui icon toggle basic inverted button">
+                        <i class="content icon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="ui vertical borderless fluid inverted menu">
+                <a class="item" href="#">Home</a>
+                <a class="item" href="/projects.html">Projects</a>
+                <a class="item" href="/skills.html">Skills</a>
+                <a class="item" href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui middle aligned center grid container">
+        <div class="column">
+            <form action="https://formspree.io/xrgzkbpk" class="ui large form" method="POST">
+                <div class="ui stacked segment center bgnone">
+                    <div class="required field">
+                        <label for="">Name</label>
+                        <input type="text" name="Name" placeholder="Name">
+                    </div>
+                    <div class="required field">
+                        <label for="">Email</label>
+                        <input type="text" name="Email" placeholder="Email Address">
+                    </div>
+                    <div class="required field">
+                        <label for="">Phone Number</label>
+                        <input type="text" name="Phone" placeholder="Phone Number">
+                    </div>
+                    <div class="field">
+                        <label>Message</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <button class="ui submit button" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/semantic.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".ui.toggle.button").click(function () {
+                $(".mobile.only.grid .ui.vertical.menu").toggle(100);
+            });
+        });
+    </script>
+</body>
