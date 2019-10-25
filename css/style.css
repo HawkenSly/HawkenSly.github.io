@@ -85,3 +85,12 @@ i.darkblue.icon {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+.projectheader {
+    font-size: 54px !important;
+}
+
+.projectspacing {
+    margin-top: 5em !important;
+    margin-bottom: 2em !important;
+}
